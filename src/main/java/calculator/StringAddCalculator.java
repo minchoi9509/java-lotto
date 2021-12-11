@@ -7,7 +7,7 @@ public class StringAddCalculator {
     private static final int INIT_NUMBER = 0;
     private static final int CRITERIA_NUMBER  = 0;
 
-    private static Tokenization tokenization = new Tokenization();
+    private static final Tokenization tokenization = new Tokenization();
 
     private StringAddCalculator() {}
 

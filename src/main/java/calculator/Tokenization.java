@@ -5,11 +5,11 @@ import java.util.regex.Pattern;
 
 public class Tokenization {
 
-    private final String TOKEN_DELIMITER = ",|:";
-    private final Pattern pattern = Pattern.compile("//(.)\n(.*)");
+    private static final String TOKEN_DELIMITER = ",|:";
+    private static final Pattern pattern = Pattern.compile("//(.)\n(.*)");
 
-    private final int DELIMITER_GROUP_NUMBER = 1;
-    private final int EXPRESSION_GROUP_NUMBER = 2;
+    private static final int DELIMITER_GROUP_NUMBER = 1;
+    private static final int EXPRESSION_GROUP_NUMBER = 2;
 
     public String[] splitExpression(String expression) {
         Matcher matcher = pattern.matcher(expression);
